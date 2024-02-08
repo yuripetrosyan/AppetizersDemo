@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		92CF13B52B7527AD0067D351 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13B42B7527AD0067D351 /* AppetizersApp.swift */; };
-		92CF13B72B7527AD0067D351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13B62B7527AD0067D351 /* ContentView.swift */; };
+		92CF13B72B7527AD0067D351 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13B62B7527AD0067D351 /* AppetizerTabView.swift */; };
 		92CF13B92B7527AF0067D351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CF13B82B7527AF0067D351 /* Assets.xcassets */; };
 		92CF13BC2B7527AF0067D351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CF13BB2B7527AF0067D351 /* Preview Assets.xcassets */; };
+		92CF13C32B7529DC0067D351 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13C22B7529DC0067D351 /* AppetizerListView.swift */; };
+		92CF13C52B7529E30067D351 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13C42B7529E30067D351 /* AccountView.swift */; };
+		92CF13C72B7529EE0067D351 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13C62B7529EE0067D351 /* OrderView.swift */; };
+		92CF13C92B75306C0067D351 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13C82B75306C0067D351 /* Appetizer.swift */; };
+		92CF13CE2B7539570067D351 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13CD2B7539570067D351 /* AppetizerListCell.swift */; };
+		92CF13D02B753FDE0067D351 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13CF2B753FDE0067D351 /* NetworkManager.swift */; };
+		92CF13D22B7540DF0067D351 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13D12B7540DF0067D351 /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92CF13B12B7527AD0067D351 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CF13B42B7527AD0067D351 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		92CF13B62B7527AD0067D351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92CF13B62B7527AD0067D351 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		92CF13B82B7527AF0067D351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CF13BB2B7527AF0067D351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92CF13C22B7529DC0067D351 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		92CF13C42B7529E30067D351 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		92CF13C62B7529EE0067D351 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		92CF13C82B75306C0067D351 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		92CF13CD2B7539570067D351 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		92CF13CF2B753FDE0067D351 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		92CF13D12B7540DF0067D351 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				92CF13B42B7527AD0067D351 /* AppetizersApp.swift */,
-				92CF13B62B7527AD0067D351 /* ContentView.swift */,
+				92CF13B62B7527AD0067D351 /* AppetizerTabView.swift */,
 				92CF13B82B7527AF0067D351 /* Assets.xcassets */,
+				92CF13CD2B7539570067D351 /* AppetizerListCell.swift */,
+				92CF13CC2B75378E0067D351 /* View */,
+				92CF13CA2B7530C10067D351 /* Model */,
 				92CF13BA2B7527AF0067D351 /* Preview Content */,
+				92CF13D12B7540DF0067D351 /* APError.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -65,6 +83,25 @@
 				92CF13BB2B7527AF0067D351 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92CF13CA2B7530C10067D351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92CF13C82B75306C0067D351 /* Appetizer.swift */,
+				92CF13CF2B753FDE0067D351 /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92CF13CC2B75378E0067D351 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92CF13C22B7529DC0067D351 /* AppetizerListView.swift */,
+				92CF13C42B7529E30067D351 /* AccountView.swift */,
+				92CF13C62B7529EE0067D351 /* OrderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CF13B72B7527AD0067D351 /* ContentView.swift in Sources */,
+				92CF13C92B75306C0067D351 /* Appetizer.swift in Sources */,
+				92CF13D22B7540DF0067D351 /* APError.swift in Sources */,
+				92CF13C52B7529E30067D351 /* AccountView.swift in Sources */,
+				92CF13B72B7527AD0067D351 /* AppetizerTabView.swift in Sources */,
 				92CF13B52B7527AD0067D351 /* AppetizersApp.swift in Sources */,
+				92CF13D02B753FDE0067D351 /* NetworkManager.swift in Sources */,
+				92CF13CE2B7539570067D351 /* AppetizerListCell.swift in Sources */,
+				92CF13C32B7529DC0067D351 /* AppetizerListView.swift in Sources */,
+				92CF13C72B7529EE0067D351 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
