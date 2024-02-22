@@ -21,14 +21,14 @@ struct Appetizer: Decodable, Identifiable {
 }
 
 
-struct AppetizerResponse{
+struct AppetizerResponse: Decodable{
     let request: [Appetizer]
 }
 
 
 struct MockData {
     
-    static let sampleApetizer = Appetizer(id: 0001,
+    static let sampleAppetizer = Appetizer(id: 0001,
                                           name: "Test Appetizer",
                                           imageURL: "testImage",
                                           carbs: 40,
@@ -38,5 +38,5 @@ struct MockData {
                                           description: "Description of the appetizer")
     
     
-    static let appetizers = [sampleApetizer, sampleApetizer, sampleApetizer, sampleApetizer]
+    static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
 }

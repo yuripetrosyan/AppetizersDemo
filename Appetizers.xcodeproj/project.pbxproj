@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92294F3C2B87793C002BB90D /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92294F3B2B87793C002BB90D /* AppetizerListViewModel.swift */; };
 		92CF13B52B7527AD0067D351 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13B42B7527AD0067D351 /* AppetizersApp.swift */; };
 		92CF13B72B7527AD0067D351 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF13B62B7527AD0067D351 /* AppetizerTabView.swift */; };
 		92CF13B92B7527AF0067D351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CF13B82B7527AF0067D351 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92294F3B2B87793C002BB90D /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		92CF13B12B7527AD0067D351 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CF13B42B7527AD0067D351 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		92CF13B62B7527AD0067D351 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				92CF13CA2B7530C10067D351 /* Model */,
 				92CF13BA2B7527AF0067D351 /* Preview Content */,
 				92CF13D12B7540DF0067D351 /* APError.swift */,
+				92294F3B2B87793C002BB90D /* AppetizerListViewModel.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				92CF13C92B75306C0067D351 /* Appetizer.swift in Sources */,
 				92CF13D22B7540DF0067D351 /* APError.swift in Sources */,
 				92CF13C52B7529E30067D351 /* AccountView.swift in Sources */,
+				92294F3C2B87793C002BB90D /* AppetizerListViewModel.swift in Sources */,
 				92CF13B72B7527AD0067D351 /* AppetizerTabView.swift in Sources */,
 				92CF13B52B7527AD0067D351 /* AppetizersApp.swift in Sources */,
 				92CF13D02B753FDE0067D351 /* NetworkManager.swift in Sources */,

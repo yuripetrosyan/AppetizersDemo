@@ -12,7 +12,7 @@ struct OrderView: View {
         NavigationStack{
          
         Text("Orders")
-             .navigationTitle("🚗 Orders")
+             .navigationTitle("Orders")
         }
     }
 }
