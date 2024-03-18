@@ -9,43 +9,49 @@ import SwiftUI
 
 struct AppetizerListView: View {
     @StateObject var viewModel = AppetizerListViewModel()
-    @State private var isShowingDetailedView = false
-    
-    @State private var selectedAppetizer: Appetizer?
+   
 
     
     var body: some View {
         ZStack{
             
             NavigationStack{
+                
+            
                 List(viewModel.appetizers) { appetizer in AppetizerListCell(appetizer: appetizer)
+                    
                         .onTapGesture {
-                            isShowingDetailedView = true
-                            selectedAppetizer = appetizer
+                            
+                            viewModel.isShowingDetailedView = true
+                            viewModel.selectedAppetizer = appetizer
+                            
                         }
                 }
                 .listStyle(.plain)
                 .navigationTitle("Appetizers")
+                .disabled(viewModel.isShowingDetailedView)
                 
             }
             .onAppear {
                 viewModel.getAppetizers()
             }
+    
             
-            .blur(radius: isShowingDetailedView ? 15.0: 0)
+            .blur(radius: viewModel.isShowingDetailedView ? 15.0: 0)
             
-            
-            .scrollDisabled(isShowingDetailedView ? true: false)
-                        
-            if isShowingDetailedView{
-                AppetizerDetailedView(appetizer: MockData.sampleAppetizer, isShowingDetailedView: $isShowingDetailedView)
+                                    
+            if viewModel.isShowingDetailedView{
+                AppetizerDetailedView(
+                   appetizer: viewModel.selectedAppetizer!,
+                   isShowingDetailedView: $viewModel.isShowingDetailedView)
                 
                 
                 
             }
             
             if viewModel.isLoading {
-                LoadingView()
+                ProgressView()
+                    .tint(.brandPrimary1)
             }
             
             

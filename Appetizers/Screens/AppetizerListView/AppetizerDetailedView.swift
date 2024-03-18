@@ -16,20 +16,18 @@ struct AppetizerDetailedView: View {
     
     var body: some View {
         
-        VStack{
+        VStack {
             
-            Image(appetizer.imageURL)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300, height: 195)
-            
-            
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 300, height: 225)
             
             
             VStack{
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .padding(.top)
                 
                 Text(appetizer.description)
                     .font(.body)
@@ -68,41 +66,32 @@ struct AppetizerDetailedView: View {
             
             Spacer()
             
-            Button("$\(appetizer.price, specifier: "%.2f") - Add To Order") {
+            Button{
                 
+            }label: {
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
+            }                                           
+        }.padding(.bottom,  30)
+            
+            .frame(width: 300, height: 550)
+            .background(Color(.systemBackground))
+            .clipShape(RoundedRectangle(cornerRadius: 20.0))
+            .shadow(radius: 40)
+            
+            .overlay(alignment: .topTrailing) {
+                Button(action: {
+                    isShowingDetailedView = false
+                }, label: {
+                   
+                        
+                        XMarkButton()
+                    
+                    
+                }).padding(10)
             }
             
-            .padding(.bottom, 50)
-            .font(.title3)
-            .buttonStyle(.borderedProminent)
-            .tint(.brandPrimary1)
             
             
-        }
-        
-        .frame(width: 300, height: 525)
-        .background(Color(.systemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 20.0))
-        .shadow(radius: 40)
-        
-        .overlay(alignment: .topTrailing) {
-            Button(action: {
-                isShowingDetailedView = false
-            }, label: {
-                ZStack{
-                    Circle()
-                        .foregroundStyle(.gray.opacity(0.6))
-                        .frame(width: 30, height: 30)
-                    
-                    Image(systemName: "xmark")
-                        .tint(.white)
-                }
-                
-            }).padding(10)
-        }
-        
-        
-        
         
     }
 }

@@ -34,4 +34,15 @@ struct AlertContext {
                                               message: Text("Unable to complete your request at this time."),
                                               dismissButton: .default(Text("Ok")))
     
+    
+    //Account alerts
+    static let emptyField = AlertItem(  title: Text("Empty Field"),
+                                        message: Text("You left a blank field"),
+                                        dismissButton: .default(Text("Ok")))
+    
+    static let invalidEmailFormat = AlertItem(  title: Text("Wrong Email format"),
+                                        message: Text("Your email is not correct"),
+                                        dismissButton: .default(Text("Ok")))
+   
+    
 }
